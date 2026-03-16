@@ -114,7 +114,7 @@ Install the Fyne dependency:
 
 ### Step 1 --- Clone or download the project
 
-    git clone <your-repo-url>
+    git clone https://github.com/andriastheI/DreShellGUI
     cd DreShellGUI
 
 or place the `main.go` file inside a folder.
