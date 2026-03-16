@@ -1,0 +1,39 @@
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go binary builds
+DreShellGUI
+DreShellGUI.exe
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Dependency directories (if used)
+vendor/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Fyne build artifacts
+fyne_metadata.json
