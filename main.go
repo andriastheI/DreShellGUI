@@ -144,7 +144,7 @@ func runCommand(input string) string {
 				return "cd: unable to find home directory"
 			}
 			currentDir = home
-			return "Changed directory to: " + currentDir
+			return "" + currentDir
 		}
 
 		target := parts[1]
