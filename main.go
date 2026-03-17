@@ -216,6 +216,10 @@ func runCommand(input string) string {
 
 	// If an error occurred, display stderr if available
 	if err != nil {
+		if strings.Contains(stderr, "not found") || strings.Contains(stderr, "is not recognized") {
+			return "Command not found. Type 'help' to see available commands."
+		}
+
 		if stderr != "" {
 			return "Command failed:\n" + stderr
 		}
