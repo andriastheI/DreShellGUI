@@ -217,9 +217,10 @@ func runCommand(input string) string {
 	// If an error occurred, display stderr if available
 	if err != nil {
 		if stderr != "" {
-			return stderr
+			return "Command failed:\n" + stderr
 		}
-		return fmt.Sprintf("Error: %v", err)
+
+		return fmt.Sprintf("Command failed: %s\nDetails: %v", input, err)
 	}
 
 	// If no output was produced, notify the user
